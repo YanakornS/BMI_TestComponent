@@ -19,7 +19,7 @@ describe("BMICalculatorComponent", () => {
   test("text is not show", () => {
     render(<BMICalculatorComponent />);
     // ควรไม่แสดงผลลัพธ์
-    expect(screen.queryByText(/BMI Calculator:/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Your BMI is:/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/Interpretation:/i)).not.toBeInTheDocument();
   });
 });
